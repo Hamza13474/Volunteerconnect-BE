@@ -29,6 +29,7 @@ class Task extends Model
         'st_date',
         'ed_date',
         'image',
+        'thearticle',
     ];
     use HasFactory;
 }

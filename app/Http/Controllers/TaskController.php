@@ -55,6 +55,8 @@ class TaskController extends Controller
         $task->st_date = $request->st_date;
         $task->ed_date = $request->ed_date;
         $task->get_user_id = $request->user_id;
+        $task->thearticle = $request->thearticle;
+        
         if($request->file('image')){
             $image = $request->file('image'); $image->storeas('public/ngoImage/',$image->getClientOriginalName());
             $image = $_FILES['image']['name']; 
